@@ -10,7 +10,7 @@
 	https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 	<dependencies>
 
-		<dependency>
+	<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.141.0</version>
@@ -46,8 +46,6 @@
 			<artifactId>webdrivermanager</artifactId>
 			<version>4.2.2</version>
 		</dependency>
-
-
 	</dependencies>
 
 
