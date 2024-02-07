@@ -8,10 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.base.TestBase;
 
 
-public class Login extends TestBase {
-
-
-	//Webelements address and initiate this by using pagefactory class 
+public class LoginFunction  extends TestBase {
 
 	@FindBy (id="si-email")
 	WebElement user;
@@ -22,7 +19,7 @@ public class Login extends TestBase {
 	@FindBy (xpath="//button[text()='Sign in']")
 	WebElement signin;
 	
-	public Login(WebDriver driver) {
+	public LoginFunction (WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	public Homepage dologin() {
