@@ -5,8 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.base.TestBase;
 
-public class equazfunctionality  {
+public class Loginfunctionality extends TestBase {
 	
 	@FindBy(name="user_id")
 	WebElement user;
@@ -17,13 +18,15 @@ public class equazfunctionality  {
 	@FindBy(xpath="//button[text()='Sign in']")
 	WebElement submit;
 	
-	public equazfunctionality(WebDriver driver) {
+	public Loginfunctionality(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void Forlogin(String Username,String Password) {
-		user.sendKeys(Username);
-		passward.sendKeys(Password);
+	public void Forlogin(String username,String password) {
+		user.sendKeys(username);
+		passward.sendKeys(password);
 		submit.click();
+	
 	}
-}
+
+		}
